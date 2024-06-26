@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+  <h:head>
+    <title>Enter Customer Data</title>
+  </h:head>
+  <h:body>
+    <h:form id="customerForm">
+      <h:panelGrid columns="2"
+                   columnClasses="rightAlign,leftAlign">
+        <h:outputLabel for="firstName" value="first Name:" />
+        <h:inputText id="firstName"
+                     label="First Name"
+                     value="#{customer.firstName}">
+        </h:inputText>
+        <h:outputLabel for="lastName" value="Last Name:" />
+        <h:inputText id="lastName"
+                     label="Last Name"
+                     value="#{customer.lastName}">
+        </h:inputText>
+        <h:panelGroup/>
+        <h:commandButton action="#{customerController.saveCustomer()}" value="Save"/>
+      </h:panelGrid>
+    </h:form>
+  </h:body>
+</html>
+
