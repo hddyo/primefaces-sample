@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>PrimeFaces and PrimeFlex Layout Example</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeflex@3.2.1/primeflex.min.css" />
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+        .navbar-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar-menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</h:head>
+<h:body>
+    <div class="navbar">
+        <div class="navbar-logo">MyApp</div>
+        <div class="navbar-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <p:button value="hoge" />
+</h:body>
+</html>
